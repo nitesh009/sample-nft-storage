@@ -36,5 +36,32 @@ cd hello-eth
 
 To interact with Ethereum, we need a JavaScript library that makes JSON-RPC API (opens new window)calls. For smart contract interactions, the two main contenders are web3.js (opens new window)and Ethers (opens new window). We're using Ethers for this guide, since it's a bit easier for getting started.
 
+# Install and run http-server
+Now you'll need to run a web server. If you haven't done so already, install Node.js (opens new window). Then you can install and run http-server (opens new window)to serve what we've created:
+
+npm install --global http-server
+http-server .
+
+The web server should provide URLs for you to copy/paste into your browser:
+
+Starting up http-server, serving .
+Available on:
+  http://127.0.0.1:8081
+  http://192.168.2.10:8081
+  http://192.168.86.24:8081
+  
+  
+Visiting any of these URLs in your browser will produce the message Hello, Hardhat!, which means that Ethers has made a call to the Greeting smart contract that Hardhat deployed to the Ropsten testnet.
+
+
+# Conclusion
+
+Great work! Now you have an easy route to interacting with smart contracts with JavaScript right in your browser, a Ropsten Testnet account loaded with ETH for fuel, and a general outline for building apps on top of Ethereum
+
+> Source
+
+https://nftschool.dev/tutorial/
+
+
 
 
